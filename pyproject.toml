@@ -25,6 +25,12 @@ ml = [
     "basic-pitch",
     "onnxruntime",
 ]
+flp = [
+    "flpkit",
+]
+
+[project.scripts]
+analyze = "analyzer.cli:app"
 
 # basic-pitch pulls TensorFlow on Windows, which has no clean wheels here; it
 # falls back to its bundled ONNX model when TF is absent and onnxruntime is present.
@@ -33,12 +39,6 @@ override-dependencies = [
     "tensorflow; sys_platform == 'never'",
     "tensorflow-io-gcs-filesystem; sys_platform == 'never'",
 ]
-flp = [
-    "flpkit",
-]
-
-[project.scripts]
-analyze = "analyzer.cli:app"
 
 [tool.uv.sources]
 torch = { index = "pytorch-cu128" }

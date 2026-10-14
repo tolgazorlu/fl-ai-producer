@@ -63,6 +63,34 @@ def _write_playlist(path: Path, blob: bytes) -> None:
     path.write_bytes(build_flp(header, events))
 
 
+EVENT_PATTERN_INDEX = 65     # u16 pattern number, starts a pattern block
+EVENT_PATTERN_NAME = 193     # utf-16le text, follows the pattern's notes event
+
+
+def _name_patterns(path: Path, names: dict[int, str]) -> None:
+    """Insert/replace a name event in each pattern block (65 [224] [193])."""
+    header, events = parse_flp(path.read_bytes())
+    out: list[Event] = []
+    i = 0
+    while i < len(events):
+        e = events[i]
+        out.append(e)
+        if e.id == EVENT_PATTERN_INDEX:
+            idx = int.from_bytes(e.data, "little")
+            j = i + 1
+            # copy the block's non-name events, dropping any existing name
+            while j < len(events) and events[j].id != EVENT_PATTERN_INDEX:
+                if events[j].id != EVENT_PATTERN_NAME:
+                    out.append(events[j])
+                j += 1
+            if idx in names:
+                out.append(Event(EVENT_PATTERN_NAME, names[idx].encode("utf-16-le") + b"\x00\x00"))
+            i = j
+            continue
+        i += 1
+    path.write_bytes(build_flp(header, out))
+
+
 def build(song: dict, template: Path, out: Path, preset_index: Path | None = None) -> dict:
     out.parent.mkdir(parents=True, exist_ok=True)
     # 1. presets
@@ -89,6 +117,7 @@ def build(song: dict, template: Path, out: Path, preset_index: Path | None = Non
         got = flpkit.write_notes(out, notes, pattern=i, channel=chan_of[spec["channel"]], mode="replace")
         pattern_ids[pname] = i
         print(f"pattern {i:2d} {pname:14s} -> {spec['channel']:7s} {len(got)} notes")
+    _name_patterns(out, {i: n for n, i in pattern_ids.items()})
     # 3. playlist
     ppq = flpkit.read(out).ppq
     _write_playlist(out, _playlist_blob(song["playlist"], pattern_ids, ppq))

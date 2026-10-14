@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "fl-studio": {
+      "command": "C:\\Users\\tolga\\source\\fl-ai-producer\\.venv-flmcp\\Scripts\\python.exe",
+      "args": ["-m", "fl_studio_mcp.server"],
+      "env": {
+        "FLSTUDIO_MCP_TRANSPORT": "tcp"
+      }
+    }
+  }
+}

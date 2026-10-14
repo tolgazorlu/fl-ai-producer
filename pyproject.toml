@@ -23,6 +23,15 @@ ml = [
     "torchaudio",
     "demucs",
     "basic-pitch",
+    "onnxruntime",
+]
+
+# basic-pitch pulls TensorFlow on Windows, which has no clean wheels here; it
+# falls back to its bundled ONNX model when TF is absent and onnxruntime is present.
+[tool.uv]
+override-dependencies = [
+    "tensorflow; sys_platform == 'never'",
+    "tensorflow-io-gcs-filesystem; sys_platform == 'never'",
 ]
 flp = [
     "flpkit",
@@ -30,6 +39,15 @@ flp = [
 
 [project.scripts]
 analyze = "analyzer.cli:app"
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+torchaudio = { index = "pytorch-cu128" }
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
 
 [build-system]
 requires = ["hatchling"]

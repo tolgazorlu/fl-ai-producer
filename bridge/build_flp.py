@@ -109,11 +109,24 @@ def build(song: dict, template: Path, out: Path, preset_index: Path | None = Non
             if isinstance(spec, dict):
                 from composer.vital_design import design
                 kw = {k: v for k, v in spec.items() if k not in ("role",)}
+                lv = (song.get("levels") or {}).get(chan, {})
+                if lv.get("osc_boost_db"):
+                    kw["osc_boost_db"] = float(lv["osc_boost_db"])
                 mapping[chan] = design(spec["role"], **kw)
             elif spec and spec.lower() in by_name:
                 mapping[chan] = by_name[spec.lower()]
             else:
                 print(f"!! preset {spec!r} for {chan} not in index; keeping template sound")
+    levels = song.get("levels") or {}
+    if levels:
+        from compare.autogain import vital_volume_param
+        for chan, lv in levels.items():
+            if "vital_gain_db" in lv and chan in mapping:
+                if isinstance(mapping[chan], Path):
+                    pth = mapping[chan]
+                    mapping[chan] = json.loads(pth.read_text(encoding="utf-8", errors="ignore"))
+                    mapping[chan].setdefault("preset_name", pth.stem)
+                mapping[chan]["settings"]["volume"] = vital_volume_param(float(lv["vital_gain_db"]))
     if mapping:
         done = apply_presets(template, out, mapping)
         print("presets:", done)
@@ -129,6 +142,11 @@ def build(song: dict, template: Path, out: Path, preset_index: Path | None = Non
         pattern_ids[pname] = i
         print(f"pattern {i:2d} {pname:14s} -> {spec['channel']:7s} {len(got)} notes")
     _name_patterns(out, {i: n for n, i in pattern_ids.items()})
+    for chan, lv in levels.items():
+        if "fl_volume" in lv and chan in chan_of:
+            flpkit.set_channel_levels(out, chan_of[chan], volume=float(lv["fl_volume"]))
+    if levels:
+        print("levels:", {c: round(l.get("fl_volume", 0), 2) for c, l in levels.items()})
     # 3. playlist
     ppq = flpkit.read(out).ppq
     _write_playlist(out, _playlist_blob(song["playlist"], pattern_ids, ppq))

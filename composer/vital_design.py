@@ -148,8 +148,20 @@ def add_pump(s: dict, depth: float, tempo_index: int = PUMP_TEMPO_INDEX) -> None
         _add_modulation(s, f"lfo_{n}", "sample_level", -depth * float(s.get("sample_level", 0.5)))
 
 
+def boost_oscillators(s: dict, db: float) -> None:
+    """Scale active oscillator/sample levels by `db` (clipped to level 1.0)."""
+    if db <= 0:
+        return
+    g = 10 ** (db / 20)
+    for o in (1, 2, 3):
+        if s.get(f"osc_{o}_on", 0) >= 1:
+            s[f"osc_{o}_level"] = float(min(1.0, s.get(f"osc_{o}_level", 0.7) * g))
+    if s.get("sample_on", 0) >= 1:
+        s["sample_level"] = float(min(1.0, s.get("sample_level", 0.5) * g))
+
+
 def design(role: str, base: str | None = None, *, pump: float | None = None, cutoff: float | None = None,
-           brightness: float = 0.0, space: float = 0.0, name: str | None = None) -> dict:
+           brightness: float = 0.0, space: float = 0.0, name: str | None = None, osc_boost_db: float = 0.0) -> dict:
     """Return a full Vital preset dict for `role`. brightness/space in -1..1 nudge filter and reverb."""
     base_name = pick_base(role, base)
     d = copy.deepcopy(load_preset(base_name))
@@ -185,6 +197,7 @@ def design(role: str, base: str | None = None, *, pump: float | None = None, cut
         for o in (1, 2, 3):
             s[f"osc_{o}_destination"] = 0.0       # 0 = filter 1
     add_pump(s, pump_depth)
+    boost_oscillators(s, osc_boost_db)
     d["preset_name"] = name or f"{role}:{base_name}"
     d["preset_style"] = role.capitalize()
     d["comments"] = f"fl-ai-producer {role} patch based on '{base_name}'"

@@ -146,12 +146,13 @@ def _size_field_offsets(data: bytes, j0: int) -> dict[str, tuple[int, str]]:
     assert ccnk > 0 and vstw > 0 and data[ccnk + 8:ccnk + 12] == b"FBCh", "unexpected Vital state layout"
     chunk_size_at = ccnk + 8 + 4 + 4 + 4 + 4 + 4 + 128      # FBCh ver fxID fxVer nProg future[128]
     assert chunk_size_at + 4 == j0, f"chunkSize field not directly before JSON ({chunk_size_at + 4} != {j0})"
-    wrapper_size_at = vstw - 4                                  # LE u32 = size of VstW..end of chunk data
+    wrapper_size_at = vstw - 8                                  # LE u64 = size of VstW..end of chunk data (u32 type=3 precedes it)
+    assert struct.unpack("<I", data[vstw - 12:vstw - 8])[0] == 3, "expected FL state record type 3 before VstW"
     # chunk 53 header: u32 id, u64 size; the state block starts 8 bytes after the size field
     c53 = data.rfind(struct.pack("<I", 53), 0, vstw)
     assert c53 > 0, "chunk 53 not found"
     return {"fbch_chunk_size": (chunk_size_at, ">I"), "ccnk_byte_size": (ccnk + 4, ">I"),
-            "wrapper_block_size": (wrapper_size_at, "<I"), "chunk53_size": (c53 + 4, "<Q")}
+            "wrapper_block_size": (wrapper_size_at, "<Q"), "chunk53_size": (c53 + 4, "<Q")}
 
 
 def set_preset(events: list[Event], slot: VitalSlot, preset: dict) -> None:

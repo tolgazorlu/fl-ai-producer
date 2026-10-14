@@ -1,0 +1,62 @@
+{
+ "Chords": {
+  "fl_volume": 1.0,
+  "vital_gain_db": 0.43189205380960694,
+  "delta_db": 8.6
+ },
+ "Bass": {
+  "fl_volume": 0.7710714138324124,
+  "vital_gain_db": -6.0200000000000005,
+  "delta_db": -0.1
+ },
+ "Lead": {
+  "fl_volume": 1.0,
+  "vital_gain_db": 5.411892053809607,
+  "delta_db": 13.6
+ },
+ "Pluck": {
+  "fl_volume": 0.5359133832111012,
+  "vital_gain_db": -6.02,
+  "delta_db": -3.3
+ },
+ "Arp": {
+  "fl_volume": 0.36778549964242935,
+  "vital_gain_db": -6.02,
+  "delta_db": -6.5
+ },
+ "Kick": {
+  "fl_volume": 0.2633871619407854,
+  "vital_gain_db": -6.02,
+  "delta_db": -9.4
+ },
+ "Clap": {
+  "fl_volume": 0.41504444222809944,
+  "vital_gain_db": -6.02,
+  "delta_db": -5.5
+ },
+ "Hat": {
+  "fl_volume": 0.28157533059740497,
+  "vital_gain_db": -6.02,
+  "delta_db": -8.8
+ },
+ "OpenHat": {
+  "fl_volume": 0.28157533059740497,
+  "vital_gain_db": -6.02,
+  "delta_db": -8.8
+ },
+ "Crash": {
+  "fl_volume": 0.30275728547270564,
+  "vital_gain_db": -6.02,
+  "delta_db": -8.2
+ },
+ "Riser": {
+  "fl_volume": 0.30275728547270564,
+  "vital_gain_db": -6.02,
+  "delta_db": -8.2
+ },
+ "Impact": {
+  "fl_volume": 0.30275728547270564,
+  "vital_gain_db": -6.02,
+  "delta_db": -8.2
+ }
+}

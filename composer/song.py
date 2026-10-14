@@ -354,7 +354,7 @@ def build_song(a: dict, name: str, seed: int = 7, presets: dict | None = None) -
     return {
         "name": name, "tempo_bpm": tempo, "key": key, "mode": mode,
         "progression": prog, "voicings": voic, "seed": seed,
-        "template": "templates/ambient-edm-v2.flp",
+        "template": "templates/ambient-edm-v3.flp",
         "presets": presets or {
             "Chords": {"role": "pad"}, "Bass": {"role": "bass"}, "Lead": {"role": "lead"},
             "Pluck": {"role": "pluck"}, "Arp": {"role": "arp"},

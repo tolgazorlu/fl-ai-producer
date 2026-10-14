@@ -1,0 +1,3 @@
+[submodule "vendor/flstudio-mcp"]
+	path = vendor/flstudio-mcp
+	url = https://github.com/rosasynthesiz/flstudio-mcp.git

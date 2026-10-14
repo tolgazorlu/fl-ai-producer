@@ -1,0 +1,23 @@
+# python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+# large/generated media
+analysis/**/stems/
+analysis/**/*.wav
+analysis/**/*.mp3
+analysis/**/*.flac
+library-index/*.npy
+library-index/*.faiss
+*.wav
+*.mp3
+*.flac
+# FL backups
+projects/Backup/
+*.flp.bak
+# models / caches
+models/
+.cache/
+# env
+.env

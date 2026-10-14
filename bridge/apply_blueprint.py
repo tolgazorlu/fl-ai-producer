@@ -23,7 +23,8 @@ def find_channel(channels: list[dict], name: str) -> int | None:
         if c.get("name", "").lower() == want:
             return int(c["i"] if "i" in c else c["index"])
     for c in channels:
-        if want in c.get("name", "").lower():
+        have = c.get("name", "").lower()
+        if want in have or (len(have) >= 3 and have in want):
             return int(c["i"] if "i" in c else c["index"])
     return None
 

@@ -64,12 +64,18 @@ class FL:
         return self.call(protocol.CMD_ARRANGE_ADD_MARKER, {"bar": int(bar), "name": name})
 
     # --- notes (pyscript bridge; MCP_Apply must be armed once per FL session)
+    # Verified 2026-10-14 on FL 26.1.6: flpianoroll Note.number N lands one octave ABOVE
+    # MIDI note N (writing 36 hit FPC's "Hi Tom" pad instead of "Kick Drum"). Blueprints use
+    # real MIDI numbers (60 = C4 = FL display C5), so subtract 12 at the boundary.
+    PITCH_OFFSET = -12
+
     def write_notes(self, notes: list[dict], mode: str = "replace", channel: int | None = None):
-        """notes: [{pitch, time_bars, length_bars, velocity 0-1}]"""
+        """notes: [{pitch (MIDI), time_bars, length_bars, velocity 0-1}]"""
         if channel is not None:
             self.select_channel(channel)
         self.ensure_piano_roll()
-        return self.b.apply_notes(notes, mode)
+        fixed = [{**n, "pitch": int(n["pitch"]) + self.PITCH_OFFSET} for n in notes]
+        return self.b.apply_notes(fixed, mode)
 
     # --- mixer / channel levels
     def channel_volume(self, index: int, vol: float):

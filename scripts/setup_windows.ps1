@@ -28,7 +28,7 @@ if (-not (Get-Process loopMIDI -ErrorAction SilentlyContinue)) { Start-Process $
 Write-Host "[5/6] FL Studio controller script"
 $fls = "$env:USERPROFILE\Documents\Image-Line\FL Studio\Settings"
 New-Item -ItemType Directory -Force "$fls\Hardware\FLStudioMCP" | Out-Null
-Copy-Item "vendor\flstudio-mcp\fl_controller\FLStudioMCP\device_FLStudioMCP.py" "$fls\Hardware\FLStudioMCP\" -Force
+Copy-Item "vendor-patches\device_FLStudioMCP.py" "$fls\Hardware\FLStudioMCP\" -Force   # upstream script + pattern_select command
 
 Write-Host "[6/6] Seed MCP_Apply piano-roll script"
 Push-Location "vendor\flstudio-mcp"

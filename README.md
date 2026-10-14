@@ -23,7 +23,7 @@ docs/PLAN.md     research + roadmap
 ## Durum / Status
 
 - [x] Phase 0a: research and plan (docs/PLAN.md)
-- [ ] Phase 0b: environment (Python via uv, loopMIDI, flstudio-mcp, torch)
+- [x] Phase 0b: environment (Python via uv, loopMIDI, flstudio-mcp, torch) — see docs/KURULUM-TR.md for the one manual FL step
 - [ ] Phase 1: `analyze`
 - [ ] Phase 2: templates + bridge validation
 - [ ] Phase 3: `recreate`

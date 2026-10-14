@@ -78,12 +78,19 @@ def _name_patterns(path: Path, names: dict[int, str]) -> None:
         if e.id == EVENT_PATTERN_INDEX:
             idx = int.from_bytes(e.data, "little")
             j = i + 1
-            # copy the block's non-name events, dropping any existing name
+            named = False
+            # copy the block's events; drop an existing name; put ours right after the notes
             while j < len(events) and events[j].id != EVENT_PATTERN_INDEX:
-                if events[j].id != EVENT_PATTERN_NAME:
-                    out.append(events[j])
+                ev = events[j]
+                if ev.id == EVENT_PATTERN_NAME:
+                    j += 1
+                    continue
+                out.append(ev)
+                if ev.id == 224 and idx in names and not named:
+                    out.append(Event(EVENT_PATTERN_NAME, names[idx].encode("utf-16-le") + b"\x00\x00"))
+                    named = True
                 j += 1
-            if idx in names:
+            if idx in names and not named:
                 out.append(Event(EVENT_PATTERN_NAME, names[idx].encode("utf-16-le") + b"\x00\x00"))
             i = j
             continue
@@ -93,16 +100,20 @@ def _name_patterns(path: Path, names: dict[int, str]) -> None:
 
 def build(song: dict, template: Path, out: Path, preset_index: Path | None = None) -> dict:
     out.parent.mkdir(parents=True, exist_ok=True)
-    # 1. presets
+    # 1. presets: either a preset name from the index or a design spec {"role": "pad", "base": ..., ...}
     mapping = {}
     if song.get("presets"):
         idx = json.loads((preset_index or Path("library-index/vital_presets.json")).read_text(encoding="utf-8"))
         by_name = {p["name"].lower(): Path(p["path"]) for p in idx}
-        for chan, name in song["presets"].items():
-            if name and name.lower() in by_name:
-                mapping[chan] = by_name[name.lower()]
+        for chan, spec in song["presets"].items():
+            if isinstance(spec, dict):
+                from composer.vital_design import design
+                kw = {k: v for k, v in spec.items() if k not in ("role",)}
+                mapping[chan] = design(spec["role"], **kw)
+            elif spec and spec.lower() in by_name:
+                mapping[chan] = by_name[spec.lower()]
             else:
-                print(f"!! preset {name!r} for {chan} not in index; keeping template sound")
+                print(f"!! preset {spec!r} for {chan} not in index; keeping template sound")
     if mapping:
         done = apply_presets(template, out, mapping)
         print("presets:", done)
@@ -110,7 +121,7 @@ def build(song: dict, template: Path, out: Path, preset_index: Path | None = Non
         shutil.copy(template, out)
     # 2. tempo + notes
     flpkit.set_tempo(out, float(song["tempo_bpm"]))
-    chan_of = song["channels"]
+    chan_of = song.get("channels") or {c.name: c.index for c in flpkit.read(out).channels}
     pattern_ids = {}
     for i, (pname, spec) in enumerate(song["patterns"].items(), start=1):
         notes = [_Note(n["pitch"], n["time_bars"] * 4, n["length_bars"] * 4, n["velocity"]) for n in spec["notes"]]
@@ -129,6 +140,6 @@ def build(song: dict, template: Path, out: Path, preset_index: Path | None = Non
 if __name__ == "__main__":
     args = sys.argv[1:]
     song = json.loads(Path(args[0]).read_text(encoding="utf-8"))
-    template = Path(args[args.index("--template") + 1]) if "--template" in args else Path("templates/ambient-edm/ambient-edm.flp")
+    template = Path(args[args.index("--template") + 1]) if "--template" in args else Path(song.get("template", "templates/ambient-edm/ambient-edm.flp"))
     out = Path(args[args.index("--out") + 1]) if "--out" in args else Path(f"projects/{song['name']}.flp")
     build(song, template, out)

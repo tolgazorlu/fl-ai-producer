@@ -22,12 +22,17 @@ TARGET_LUFS = {"Pad": -17.0, "Bass": -15.0, "Lead": -17.0, "Pluck": -19.0, "Arp"
 VITAL_CHANNELS = {"Chords", "Bass", "Lead", "Pluck", "Arp"}
 
 
+# FL's channel volume knob is not a plain linear gain: measured on FL 2026 renders,
+# a knob ratio r changes the level by ~1.6 * 20*log10(r) dB (0.78 = unity).
+FL_KNOB_EXP = 1.6
+
+
 def fl_volume_for_db(db: float) -> float:
-    return max(0.03, min(1.0, 0.8 * 10 ** (db / 20)))
+    return max(0.03, min(1.0, 0.78 * 10 ** (db / (20 * FL_KNOB_EXP))))
 
 
 def db_of_fl_volume(v: float) -> float:
-    return 20 * math.log10(max(v, 1e-4) / 0.8)
+    return FL_KNOB_EXP * 20 * math.log10(max(v, 1e-4) / 0.78)
 
 
 def plan(stem_stats: dict[str, dict], current: dict[str, dict] | None = None) -> dict[str, dict]:

@@ -2,27 +2,32 @@
  "Chords": {
   "fl_volume": 1.0,
   "vital_gain_db": 5.771892053809607,
-  "delta_db": 5.3
+  "delta_db": 5.3,
+  "osc_boost_db": 0.0
  },
  "Bass": {
   "fl_volume": 1.0,
   "vital_gain_db": -1.4381079461903914,
-  "delta_db": 6.8
+  "delta_db": 6.8,
+  "osc_boost_db": 0.0
  },
  "Lead": {
   "fl_volume": 1.0,
   "vital_gain_db": 6.0,
-  "delta_db": 7.7
+  "delta_db": 7.7,
+  "osc_boost_db": 7.1
  },
  "Pluck": {
   "fl_volume": 1.0,
   "vital_gain_db": -0.15810794619039026,
-  "delta_db": 11.3
+  "delta_db": 11.3,
+  "osc_boost_db": 0.0
  },
  "Arp": {
   "fl_volume": 1.0,
   "vital_gain_db": 6.0,
-  "delta_db": 23.8
+  "delta_db": 23.8,
+  "osc_boost_db": 3.1
  },
  "Kick": {
   "fl_volume": 0.46515168947061847,

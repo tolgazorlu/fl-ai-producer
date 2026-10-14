@@ -15,15 +15,19 @@ adımı FL Studio'nun içinde senin yapman gerekir (FL bu ayarı dışarıdan de
 ## Tek seferlik: FL Studio MIDI ayarı
 
 1. FL Studio'yu aç. Üst menüden **Options > MIDI Settings** (kısayol: F10).
-2. **Input** listesinde `FLStudioMCP RX` satırını seç:
+2. Pencerenin **alt yarısı Input** listesi. Orada **sadece** `FLStudioMCP RX` satırını seç:
    - **Enable** kutusunu işaretle.
    - **Controller type** açılır listesinden **FLStudioMCP** seç.
-   - **Port** kutusuna **42** yaz.
-3. **Output** listesinde `FLStudioMCP TX` satırını seç:
-   - **Enable** işaretle, **Port** = **42** (aynı numara).
+   - Sağdaki **Port** kutusunu **42** yap. Bu kutuya yazılmaz: üzerine gelip **mouse tekerleğini** çevir
+     veya tıklayıp yukarı sürükle.
+   - `FLStudioMCP TX` satırı Input listesinde **etkin olmasın**.
+3. Pencerenin **üst yarısı Output** listesi. Orada `FLStudioMCP TX` satırını seç:
+   - **Enable** işaretle, **Port** kutusunu tekerlekle **42** yap (Input ile aynı numara).
 4. Pencereyi kapat. **View > Script output** penceresinde `[FLStudioMCP] Ready` yazısını görmelisin.
 
 Eğer `FLStudioMCP` listede çıkmıyorsa FL Studio'yu tamamen kapatıp tekrar aç.
+
+Doğrulama: Claude'da `fl_ping` çağrısı `alive: true` dönmeli. (14 Ekim 2026'da bu kurulum tamamlandı ve doğrulandı.)
 
 ## Her oturumda (her FL açılışında)
 

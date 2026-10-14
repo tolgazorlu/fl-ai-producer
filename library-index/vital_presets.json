@@ -1,0 +1,1127 @@
+[
+ {
+  "name": "Banana Wob",
+  "pack": "Afro",
+  "style": "Bass",
+  "author": "afro",
+  "comments": "Macro 1 to wob it\nMacro 2 controls the spectral morph",
+  "macros": [
+   "WOB",
+   "BANAN",
+   "SUB",
+   "MACRO 4"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Afro\\Presets\\Banana Wob.vital",
+  "size": 1196598
+ },
+ {
+  "name": "Kick Drum 1",
+  "pack": "Afro",
+  "style": "Percussion",
+  "author": "afro",
+  "comments": "",
+  "macros": [
+   "MACRO 1",
+   "MACRO 2",
+   "MACRO 3",
+   "MACRO 4"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Afro\\Presets\\Kick Drum 1.vital",
+  "size": 174653
+ },
+ {
+  "name": "Random Amp Growl",
+  "pack": "Afro",
+  "style": "Bass",
+  "author": "afro",
+  "comments": "Use the macros",
+  "macros": [
+   "GROWL",
+   "FLAVOR",
+   "MACRO 3",
+   "MACRO 4"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Afro\\Presets\\Random Amp Growl.vital",
+  "size": 1073778
+ },
+ {
+  "name": "Cinema Bells",
+  "pack": "Billain",
+  "style": "Sequence",
+  "author": "Billain",
+  "comments": "",
+  "macros": [
+   "FILTER 1",
+   "BELLS",
+   "BASS",
+   "DRONIZE"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Billain\\Presets\\Factory Presets\\Cinema Bells.vital",
+  "size": 1477559
+ },
+ {
+  "name": "Railgun",
+  "pack": "Billain",
+  "style": "SFX",
+  "author": "Billain",
+  "comments": "",
+  "macros": [
+   "CALIBER",
+   "CALIBER 2",
+   "CALIBER 3",
+   "MACRO 4"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Billain\\Presets\\Factory Presets\\Railgun.vital",
+  "size": 1426802
+ },
+ {
+  "name": "Ceramic",
+  "pack": "Databroth",
+  "style": "Keys",
+  "author": "Databroth",
+  "comments": "",
+  "macros": [
+   "MUTE",
+   "TONE",
+   "SUSTAIN",
+   "MOD"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Databroth\\Presets\\Factory Presets\\Ceramic.vital",
+  "size": 208393
+ },
+ {
+  "name": "Disrupt",
+  "pack": "Databroth",
+  "style": "Bass",
+  "author": "Databroth",
+  "comments": "",
+  "macros": [
+   "TRANSFORM",
+   "SQUASH",
+   "DISSIPATE",
+   "RESONATE"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Databroth\\Presets\\Factory Presets\\Disrupt.vital",
+  "size": 1698422
+ },
+ {
+  "name": "Feeder",
+  "pack": "Databroth",
+  "style": "Sequence",
+  "author": "Databroth",
+  "comments": "",
+  "macros": [
+   "SUSTAIN",
+   "SWALLOW",
+   "CHEW",
+   "CORRUPT"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Databroth\\Presets\\Factory Presets\\Feeder.vital",
+  "size": 4480796
+ },
+ {
+  "name": "Fleet",
+  "pack": "Databroth",
+  "style": "Pad",
+  "author": "Databroth",
+  "comments": "",
+  "macros": [
+   "SIMPLIFY",
+   "BOX",
+   "PULSATE",
+   "SMOOTH"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Databroth\\Presets\\Factory Presets\\Fleet.vital",
+  "size": 1249209
+ },
+ {
+  "name": "Gorgled",
+  "pack": "Databroth",
+  "style": "Bass",
+  "author": "Databroth",
+  "comments": "",
+  "macros": [
+   "WOBBLE",
+   "AMBIENCE",
+   "GIRGLE",
+   "GRIND"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Databroth\\Presets\\Factory Presets\\Gorgled.vital",
+  "size": 1503327
+ },
+ {
+  "name": "Snowcrash",
+  "pack": "Databroth",
+  "style": "Pad",
+  "author": "Databroth",
+  "comments": "light shimmery pad\nLots of macros to get a variety of noise and chaos",
+  "macros": [
+   "GLITCH",
+   "SPREAD",
+   "TEAR",
+   "CHAOS"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Databroth\\Presets\\Factory Presets\\Snowcrash.vital",
+  "size": 315942
+ },
+ {
+  "name": "Ah Eh Ee Oh",
+  "pack": "Factory",
+  "style": "Experiment",
+  "author": "Matt Tytel",
+  "comments": "I feel like Dan Deacon would make this patch.",
+  "macros": [
+   "FORMANT",
+   "DELAY",
+   "CENTER",
+   "MACRO 4"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Factory\\Presets\\Ah Eh Ee Oh.vital",
+  "size": 209615
+ },
+ {
+  "name": "FM Drum Circle",
+  "pack": "Factory",
+  "style": "Percussion",
+  "author": "Matt Tytel",
+  "comments": "Randomized FM tunings with plucking to create percussion.",
+  "macros": [
+   "PERC",
+   "TENSION",
+   "PITCH",
+   "CAVE"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Factory\\Presets\\FM Drum Circle.vital",
+  "size": 175015
+ },
+ {
+  "name": "Plucked String",
+  "pack": "Factory",
+  "style": "Keys",
+  "author": "Matt Tytel",
+  "comments": "Physically modelled string percussion with some weird bending as a macro control.",
+  "macros": [
+   "BEND",
+   "TIMBRE",
+   "VERB",
+   "MACRO 4"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Factory\\Presets\\Plucked String.vital",
+  "size": 1581585
+ },
+ {
+  "name": "Shepard Tone Template",
+  "pack": "Factory",
+  "style": "Template",
+  "author": "Matt Tytel",
+  "comments": "Staring place for shepard tone presets",
+  "macros": [
+   "MACRO 1",
+   "MACRO 2",
+   "MACRO 3",
+   "MACRO 4"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Factory\\Presets\\Shepard Tone Template.vital",
+  "size": 174089
+ },
+ {
+  "name": "Staggered Phrases",
+  "pack": "Factory",
+  "style": "Experiment",
+  "author": "Matt Tytel",
+  "comments": "LFO tempo modulation gives some randomness to this one.",
+  "macros": [
+   "BLEND",
+   "DRIVE",
+   "SPUTTER",
+   "MACRO 4"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Factory\\Presets\\Staggered Phrases.vital",
+  "size": 427931
+ },
+ {
+  "name": "Text To Wavetable Template",
+  "pack": "Factory",
+  "style": "Template",
+  "author": "Matt Tytel",
+  "comments": "Start here if it's your first time setting up text-to-wavetable. \n\nAdjust LFO 1 for word speed\nAdjust VOCODE for formant shifting",
+  "macros": [
+   "MACRO 1",
+   "MACRO 2",
+   "MACRO 3",
+   "MACRO 4"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Factory\\Presets\\Text To Wavetable Template.vital",
+  "size": 248790
+ },
+ {
+  "name": "Touch Tone",
+  "pack": "Factory",
+  "style": "Experiment",
+  "author": "Matt Tytel",
+  "comments": "Bringing back those warm nineties tones.\n\nBb is dial tone, B is ringing.",
+  "macros": [
+   "MACRO 1",
+   "MACRO 2",
+   "MACRO 3",
+   "MACRO 4"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Factory\\Presets\\Touch Tone.vital",
+  "size": 231144
+ },
+ {
+  "name": "Digestive Trauma",
+  "pack": "Glorkglunk",
+  "style": "Bass",
+  "author": "Glorkglunk",
+  "comments": "slightly gross growl with a screamy option and squarify \n",
+  "macros": [
+   "SCREAM",
+   "SQUISH",
+   "RINGY",
+   "SQIFY"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Glorkglunk\\Presets\\Digestive Trauma.vital",
+  "size": 2196216
+ },
+ {
+  "name": "Special Glitch Thing",
+  "pack": "Glorkglunk",
+  "style": "Experiment",
+  "author": "Glorkglunk",
+  "comments": "very special",
+  "macros": [
+   "WHIP",
+   "METAL",
+   "TIME",
+   "SQUISH"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Glorkglunk\\Presets\\Special Glitch Thing.vital",
+  "size": 302074
+ },
+ {
+  "name": "Squish Clicker",
+  "pack": "Glorkglunk",
+  "style": "SFX",
+  "author": "Glorkglunk",
+  "comments": "do you like bubbles or gross clicks?",
+  "macros": [
+   "BUBBLE",
+   "MACRO 2",
+   "SPEED",
+   "MACRO 4"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Glorkglunk\\Presets\\Squish Clicker.vital",
+  "size": 174758
+ },
+ {
+  "name": "Thumpus",
+  "pack": "Glorkglunk",
+  "style": "Bass",
+  "author": "Glorkglunk",
+  "comments": "punchy spectral bass",
+  "macros": [
+   "SPEED",
+   "FORMANT",
+   "SQMIX",
+   "SQCUT"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Glorkglunk\\Presets\\Thumpus.vital",
+  "size": 1373268
+ },
+ {
+  "name": "THUNK",
+  "pack": "Glorkglunk",
+  "style": "Bass",
+  "author": "Glorkglunk",
+  "comments": "thunk chunk squnk",
+  "macros": [
+   "THUNK",
+   "NOISE",
+   "CHUNK",
+   "SQUNK"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Glorkglunk\\Presets\\THUNK.vital",
+  "size": 846158
+ },
+ {
+  "name": "Swiss Army Knife",
+  "pack": "Halcyon Future Riddim Vol 1",
+  "style": "Lead",
+  "author": "Aweminus",
+  "comments": "",
+  "macros": [
+   "CHOERUS",
+   "FILTR",
+   "MACRO 3",
+   "MACRO 4"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Halcyon Future Riddim Vol 1\\Presets\\Aweminus\\Swiss Army Knife.vital",
+  "size": 2023862
+ },
+ {
+  "name": "Boot Scre3n",
+  "pack": "Halcyon Future Riddim Vol 1",
+  "style": "Sequence",
+  "author": "Oolacile",
+  "comments": "",
+  "macros": [
+   "RAM",
+   "KERNEL SHELL",
+   "CORRUPT",
+   "MACRO 4"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Halcyon Future Riddim Vol 1\\Presets\\Oolacile\\Boot Scre3n.vital",
+  "size": 167042
+ },
+ {
+  "name": "Memory Leak",
+  "pack": "Halcyon Future Riddim Vol 1",
+  "style": "Sequence",
+  "author": "Oolacile",
+  "comments": "",
+  "macros": [
+   "SYNC",
+   "TONE",
+   "HELL",
+   "BASS"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Halcyon Future Riddim Vol 1\\Presets\\Oolacile\\Memory Leak.vital",
+  "size": 2422332
+ },
+ {
+  "name": "Oolacile Evil Dubstep Bass",
+  "pack": "Halcyon Future Riddim Vol 1",
+  "style": "Bass",
+  "author": "Oolacile",
+  "comments": "",
+  "macros": [
+   "TONE",
+   "LFO AMOUNT",
+   "DEMENT",
+   "N"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Halcyon Future Riddim Vol 1\\Presets\\Oolacile\\Oolacile Evil Dubstep Bass.vital",
+  "size": 5149253
+ },
+ {
+  "name": "Satellites",
+  "pack": "Halcyon Future Riddim Vol 1",
+  "style": "Keys",
+  "author": "Oolacile",
+  "comments": "lush digital keys",
+  "macros": [
+   "TONE",
+   "WET",
+   "MACRO 3",
+   "MACRO 4"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Halcyon Future Riddim Vol 1\\Presets\\Oolacile\\Satellites.vital",
+  "size": 2915133
+ },
+ {
+  "name": "Space Station",
+  "pack": "Halcyon Future Riddim Vol 1",
+  "style": "Pad",
+  "author": "Oolacile",
+  "comments": "",
+  "macros": [
+   "POST DELAY",
+   "RERVERB",
+   "NOISE",
+   "SPECTRAL"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Halcyon Future Riddim Vol 1\\Presets\\Oolacile\\Space Station.vital",
+  "size": 176486
+ },
+ {
+  "name": "Simple Weoum",
+  "pack": "Halcyon Future Riddim Vol 1",
+  "style": "Bass",
+  "author": "phonon",
+  "comments": "",
+  "macros": [
+   "FLANGER",
+   "PHASER",
+   "DELAY",
+   "MACRO 4"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Halcyon Future Riddim Vol 1\\Presets\\Phonon\\Simple Weoum.vital",
+  "size": 4454600
+ },
+ {
+  "name": "VLT Future Gun",
+  "pack": "Halcyon Future Riddim Vol 1",
+  "style": "Bass",
+  "author": "Voltra",
+  "comments": "",
+  "macros": [
+   "SPEED",
+   "PITCH",
+   "ACCEL",
+   "POS"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Halcyon Future Riddim Vol 1\\Presets\\Voltra\\VLT Future Gun.vital",
+  "size": 369311
+ },
+ {
+  "name": "Analog Pad",
+  "pack": "In The Mix",
+  "style": "Pad",
+  "author": "In The Mix",
+  "comments": "",
+  "macros": [
+   "BRIGHTNESS",
+   "REVERB",
+   "DELAY",
+   "DRIVE"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\In The Mix\\Presets\\Analog Pad.vital",
+  "size": 268065
+ },
+ {
+  "name": "Distant Majestic Lead",
+  "pack": "In The Mix",
+  "style": "Lead",
+  "author": "In The Mix",
+  "comments": "",
+  "macros": [
+   "REVERB",
+   "DELAY",
+   "SMOOTH",
+   "DECAY"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\In The Mix\\Presets\\Distant Majestic Lead.vital",
+  "size": 753731
+ },
+ {
+  "name": "Growl Bass Sidechain",
+  "pack": "In The Mix",
+  "style": "Bass",
+  "author": "In The Mix",
+  "comments": "Use the Macros to shape the sound ",
+  "macros": [
+   "BASS DRIVE",
+   "FILTER",
+   "SPACE",
+   "WARP"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\In The Mix\\Presets\\Growl Bass Sidechain.vital",
+  "size": 241415
+ },
+ {
+  "name": "Moog Pluck",
+  "pack": "In The Mix",
+  "style": "Bass",
+  "author": "In The Mix",
+  "comments": "",
+  "macros": [
+   "SPACE",
+   "ATTACK",
+   "FILTER",
+   "MACRO 4"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\In The Mix\\Presets\\Moog Pluck.vital",
+  "size": 327884
+ },
+ {
+  "name": "Strings Section",
+  "pack": "In The Mix",
+  "style": "Pad",
+  "author": "In The Mix",
+  "comments": "",
+  "macros": [
+   "BRIGHTNESS",
+   "ATTACK",
+   "REVERB",
+   "GRIT"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\In The Mix\\Presets\\Strings Section.vital",
+  "size": 174710
+ },
+ {
+  "name": "Big Stomp",
+  "pack": "inktome",
+  "style": "Bass",
+  "author": "inktome",
+  "comments": "punchy bass effect for punching bassheads",
+  "macros": [
+   "BOOT SIZE",
+   "HICCUP",
+   "PIPE",
+   "MACRO 4"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\inktome\\Presets\\Big Stomp.vital",
+  "size": 751303
+ },
+ {
+  "name": "Digital roller",
+  "pack": "inktome",
+  "style": "Sequence",
+  "author": "inktome",
+  "comments": "talky bitcrushed sequence. cannot get it to shut up",
+  "macros": [
+   "WIDEN",
+   "EXTRA",
+   "MACRO 3",
+   "MACRO 4"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\inktome\\Presets\\Digital roller.vital",
+  "size": 293764
+ },
+ {
+  "name": "Piano from the yard sale",
+  "pack": "inktome",
+  "style": "Keys",
+  "author": "inktome",
+  "comments": "use macros to find a balance between makeshift/bodge and elegant/cute",
+  "macros": [
+   "DETUNE",
+   "DIRT",
+   "TWANG",
+   "MUFFLE"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\inktome\\Presets\\Piano from the yard sale.vital",
+  "size": 504953
+ },
+ {
+  "name": "Complex Electro 1",
+  "pack": "Level 8",
+  "style": "Sequence",
+  "author": "Level 8",
+  "comments": "A Complextro sequence tuned in minor. The sample is a minor-saw-chord, OSC 1 a typical saw bass, OSC 2 a bass pluck and OSC 3 the classic Yoy.",
+  "macros": [
+   "LP BASS",
+   "SIDECHAIN",
+   "SAW TONE",
+   "CLIPPING"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Level 8\\Presets\\Factory Presets\\Complex Electro 1.vital",
+  "size": 2018609
+ },
+ {
+  "name": "Crescendo Bells",
+  "pack": "Level 8",
+  "style": "Experiment",
+  "author": "Level 8",
+  "comments": "'Arping Bells' mimicking an uplifting arp. Macro 1 puts all OSCs on the same postition to make the bells easier playable together.",
+  "macros": [
+   "NORMAL",
+   "DISTORT",
+   "HARMONIES",
+   "VINYL"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Level 8\\Presets\\Factory Presets\\Crescendo Bells.vital",
+  "size": 1354661
+ },
+ {
+  "name": "Damped Horn",
+  "pack": "Level 8",
+  "style": "Lead",
+  "author": "Level 8",
+  "comments": "A damped horror horn at low tune. Macro 3 (Morph) enlightens the room with a higher horn and a slightly brighter sound.",
+  "macros": [
+   "VIBRATO",
+   "TREMOLO",
+   "MORPH",
+   "TUBE"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Level 8\\Presets\\Factory Presets\\Damped Horn.vital",
+  "size": 1301114
+ },
+ {
+  "name": "FM Mode",
+  "pack": "Level 8",
+  "style": "Bass",
+  "author": "Level 8",
+  "comments": "Classic FM whomp used in Dubstep / Trap / EDM. Macro 1 (Tone) and Macro 4 (Garage) control the overall timbre of the sound. Velocity and Macro 2 (Open) control the filter cutoff(s). ",
+  "macros": [
+   "TONE",
+   "OPEN",
+   "REVERB",
+   "GARAGE"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Level 8\\Presets\\Factory Presets\\FM Mode.vital",
+  "size": 406912
+ },
+ {
+  "name": "Horror of Melbourne 1",
+  "pack": "Level 8",
+  "style": "Bass",
+  "author": "Level 8",
+  "comments": "Melbourne Bounce Lead made of various Bandpass Filters and a Phaser. The macros and MW control the different tones and timbres. Play around with the Phaser in the Effects section to create even more t",
+  "macros": [
+   "TONE",
+   "DISTORTION",
+   "TIMBRE",
+   "VELOCITY"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Level 8\\Presets\\Factory Presets\\Horror of Melbourne 1.vital",
+  "size": 676703
+ },
+ {
+  "name": "Smoker's Lounge",
+  "pack": "Level 8",
+  "style": "Keys",
+  "author": "Level 8",
+  "comments": "Retro Lounge chord pluck with tuned Oscillators. Macros and MW make it easy to give it a new timbre or to adjust it to your mix. \n(MW is dope!)",
+  "macros": [
+   "OPEN",
+   "CLOSE",
+   "WET",
+   "SMOKEY"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Level 8\\Presets\\Factory Presets\\Smoker's Lounge.vital",
+  "size": 2749719
+ },
+ {
+  "name": "Cursed Steps",
+  "pack": "Mr Bill",
+  "style": "Sequence",
+  "author": "Mr. Bill",
+  "comments": "",
+  "macros": [
+   "CUTOFF",
+   "LO HARMONY",
+   "HI HARMONY",
+   "SUBDUEMENT"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Mr Bill\\Presets\\Cursed Steps.vital",
+  "size": 285350
+ },
+ {
+  "name": "E4 One Note Metallophone",
+  "pack": "Mr Bill",
+  "style": "Sequence",
+  "author": "Mr. Bill",
+  "comments": "",
+  "macros": [
+   "ARP",
+   "HANDPAN",
+   "DRY/WET",
+   "MEAT"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Mr Bill\\Presets\\E4 One Note Metallophone.vital",
+  "size": 1370066
+ },
+ {
+  "name": "Float Chords",
+  "pack": "Mr Bill",
+  "style": "Sequence",
+  "author": "Mr. Bill",
+  "comments": "",
+  "macros": [
+   "METALLIC",
+   "BELLS",
+   "STEREO",
+   "CUTOFF"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Mr Bill\\Presets\\Float Chords.vital",
+  "size": 10126117
+ },
+ {
+  "name": "Honk Wub",
+  "pack": "Mr Bill",
+  "style": "Pad",
+  "author": "Mr. Bill",
+  "comments": "",
+  "macros": [
+   "SPACE",
+   "CUTOFF",
+   "TONE",
+   "RESONANCE"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Mr Bill\\Presets\\Honk Wub.vital",
+  "size": 3884939
+ },
+ {
+  "name": "LORN Style Lead",
+  "pack": "Mr Bill",
+  "style": "Pad",
+  "author": "Mr. Bill",
+  "comments": "",
+  "macros": [
+   "INTENSITY",
+   "EXISTENTIAL CRISIS",
+   "BIG SPACE",
+   "MACRO 4"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Mr Bill\\Presets\\LORN Style Lead.vital",
+  "size": 285737
+ },
+ {
+  "name": "Real Squarepusher Hours",
+  "pack": "Mr Bill",
+  "style": "Sequence",
+  "author": "Mr. Bill",
+  "comments": "",
+  "macros": [
+   "MELODIC",
+   "CUTOFF",
+   "GRIT",
+   "MACRO 4"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Mr Bill\\Presets\\Real Squarepusher Hours.vital",
+  "size": 155111
+ },
+ {
+  "name": "Remedial Shikari",
+  "pack": "Mr Bill",
+  "style": "Sequence",
+  "author": "Mr. Bill",
+  "comments": "",
+  "macros": [
+   "HARMONIC",
+   "TONE",
+   "GRIT",
+   "SPACE"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Mr Bill\\Presets\\Remedial Shikari.vital",
+  "size": 284971
+ },
+ {
+  "name": "Super Nice Pluck",
+  "pack": "Mr Bill",
+  "style": "Pad",
+  "author": "Mr. Bill",
+  "comments": "",
+  "macros": [
+   "LENGTH",
+   "CUTOFF",
+   "PAD",
+   "MACRO 4"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Mr Bill\\Presets\\Super Nice Pluck.vital",
+  "size": 1686403
+ },
+ {
+  "name": "Dispersed Grit",
+  "pack": "Navi Retlav Studio",
+  "style": "Bass",
+  "author": "Navi Retlav",
+  "comments": "",
+  "macros": [
+   "FM GRIT",
+   "PHASER",
+   "STEREO",
+   "REVERB"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Navi Retlav Studio\\Presets\\Factory Presets\\Dispersed Grit.vital",
+  "size": 231188
+ },
+ {
+  "name": "Drowning Machine",
+  "pack": "Navi Retlav Studio",
+  "style": "Pad",
+  "author": "Navi Retlav",
+  "comments": "",
+  "macros": [
+   "ATTACK",
+   "DRIFT",
+   "PHASER",
+   "REVERB"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Navi Retlav Studio\\Presets\\Factory Presets\\Drowning Machine.vital",
+  "size": 1554373
+ },
+ {
+  "name": "Phaser Man",
+  "pack": "Navi Retlav Studio",
+  "style": "Sequence",
+  "author": "Navi Retlav",
+  "comments": "",
+  "macros": [
+   "RATES",
+   "MULTI MOD",
+   "PHASER",
+   "REVERB"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Navi Retlav Studio\\Presets\\Factory Presets\\Phaser Man.vital",
+  "size": 296255
+ },
+ {
+  "name": "Physical Tension",
+  "pack": "Navi Retlav Studio",
+  "style": "Percussion",
+  "author": "Navi Retlav",
+  "comments": "Chorus based physical modelling drum",
+  "macros": [
+   "TENSION",
+   "SEPARATION",
+   "TONE",
+   "REVERB"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Navi Retlav Studio\\Presets\\Factory Presets\\Physical Tension.vital",
+  "size": 164228
+ },
+ {
+  "name": "Skew Resandal",
+  "pack": "Navi Retlav Studio",
+  "style": "Bass",
+  "author": "Navi Retlav",
+  "comments": "MW opens up the filter lfo",
+  "macros": [
+   "SKEW",
+   "MOD SPEED",
+   "PHASE MOD",
+   "DELAY"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Navi Retlav Studio\\Presets\\Factory Presets\\Skew Resandal.vital",
+  "size": 518960
+ },
+ {
+  "name": "Super Pluck",
+  "pack": "Navi Retlav Studio",
+  "style": "Keys",
+  "author": "Navi Retlav",
+  "comments": "It's very sharp!",
+  "macros": [
+   "DECAY",
+   "CLICK",
+   "CHORUS",
+   "AMBIENCE"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Navi Retlav Studio\\Presets\\Factory Presets\\Super Pluck.vital",
+  "size": 2950151
+ },
+ {
+  "name": "A happy ending of the world",
+  "pack": "Unsystematic Fragmentation",
+  "style": "Experiment",
+  "author": "Kyurumi",
+  "comments": "you are slowly feeling how the world decays... It is suggested to play long chords with this\n\nCrush completely crushes the sound and destroys it\nNo high eliminates the high end and gives it a softer t",
+  "macros": [
+   "CRUSH",
+   "REVERB",
+   "DELAY",
+   "NO HIGH"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Unsystematic Fragmentation\\Presets\\Factory Presets\\A happy ending of the world.vital",
+  "size": 3114585
+ },
+ {
+  "name": "Chorusy Keys",
+  "pack": "Unsystematic Fragmentation",
+  "style": "Keys",
+  "author": "Kyurumi",
+  "comments": "A ton of chorus or just hyper in general\n\nModhwheel opens up the sound and Tail gives it a bit of a longer release meanwhile Filter might muffle it or make it sound brighter",
+  "macros": [
+   "TAIL",
+   "FILTER",
+   "RM",
+   "FX"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Unsystematic Fragmentation\\Presets\\Factory Presets\\Chorusy Keys.vital",
+  "size": 1743156
+ },
+ {
+  "name": "corrupted_...+=boot-_",
+  "pack": "Unsystematic Fragmentation",
+  "style": "Pad",
+  "author": "Kyurumi",
+  "comments": "Reminds me of something i heard before in a place I've never been to but it exists, this is possible to use with 1 note\n\nModwheel moving and 1 note is enough along other macros to make it bigger and a",
+  "macros": [
+   "DRONE",
+   "CHORUS",
+   "BITCRUSH",
+   "CODE"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Unsystematic Fragmentation\\Presets\\Factory Presets\\corrupted_...+=boot-_.vital",
+  "size": 1556063
+ },
+ {
+  "name": "Fun Pulse",
+  "pack": "Unsystematic Fragmentation",
+  "style": "Sequence",
+  "author": "Kyurumi",
+  "comments": "You can chords or 1 note, kinda like an arp",
+  "macros": [
+   "CRUSH",
+   "CHORUS",
+   "FX",
+   "EXTRA"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Unsystematic Fragmentation\\Presets\\Factory Presets\\Fun Pulse.vital",
+  "size": 164981
+ },
+ {
+  "name": "Moving Harmonics",
+  "pack": "Unsystematic Fragmentation",
+  "style": "Lead",
+  "author": "Kyurumi",
+  "comments": "It keeps changing it's harmonics all the time\n\nSquare makes it a bit more squary and Modwheel opens up the sound",
+  "macros": [
+   "SQUARE",
+   "FX",
+   "CRUSH",
+   "HYPER"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Unsystematic Fragmentation\\Presets\\Factory Presets\\Moving Harmonics.vital",
+  "size": 328794
+ },
+ {
+  "name": "Phaser Entropy ",
+  "pack": "Unsystematic Fragmentation",
+  "style": "Bass",
+  "author": "Kyurumi",
+  "comments": "A quite deep or not so great dubstep bass\n\nMonster alters the tonality of the sound changing overall the phasers and other things\nSync introduces sync as the way of formant\nLess Phaser minimizes the u",
+  "macros": [
+   "MONSTER",
+   "SYNC",
+   "LESS PHASER",
+   "DRIVE"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Unsystematic Fragmentation\\Presets\\Factory Presets\\Phaser Entropy .vital",
+  "size": 1563937
+ },
+ {
+  "name": "A Night in Kalyan",
+  "pack": "Yuli Yolo",
+  "style": "Experiment",
+  "author": "Yuli Yolo",
+  "comments": "Ambiance sound made with an exciter and a resonator.\nMW: Drone Damping.",
+  "macros": [
+   "RANDOM",
+   "FASTER",
+   "GLIDE",
+   "SPACE"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Yuli Yolo\\Presets\\Factory Presets\\A Night in Kalyan.vital",
+  "size": 1367913
+ },
+ {
+  "name": "Abbysun",
+  "pack": "Yuli Yolo",
+  "style": "Pad",
+  "author": "Yuli Yolo",
+  "comments": "Deep synthesizer pad.\nPRESS: Slow Vibrato.\nMW: Filter LP to HP.",
+  "macros": [
+   "ENV TIME",
+   "DETUNE",
+   "VARIATION",
+   "SPACE"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Yuli Yolo\\Presets\\Factory Presets\\Abbysun.vital",
+  "size": 1554943
+ },
+ {
+  "name": "Destruction",
+  "pack": "Yuli Yolo",
+  "style": "SFX",
+  "author": "Yuli Yolo",
+  "comments": "Monster Bass fx.\nMW: Stereo.",
+  "macros": [
+   "PRESENCE",
+   "PULSE RATE",
+   "RESONANCE",
+   "SPACE"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Yuli Yolo\\Presets\\Factory Presets\\Destruction.vital",
+  "size": 1574509
+ },
+ {
+  "name": "DIY",
+  "pack": "Yuli Yolo",
+  "style": "Percussion",
+  "author": "Yuli Yolo",
+  "comments": "Fantazy Low Percussion.\nMW: Noise Sustain.",
+  "macros": [
+   "STRETCH",
+   "VARIATION",
+   "LIFT",
+   "SPACE"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Yuli Yolo\\Presets\\Factory Presets\\DIY.vital",
+  "size": 829406
+ },
+ {
+  "name": "Easy Mallet",
+  "pack": "Yuli Yolo",
+  "style": "Percussion",
+  "author": "Yuli Yolo",
+  "comments": "Mallet sound.\nPRESS: Sustain Amp.\nMW: Vibrato\n",
+  "macros": [
+   "KEYS",
+   "HARMONICS",
+   "WOOD",
+   "SPACE"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Yuli Yolo\\Presets\\Factory Presets\\Easy Mallet.vital",
+  "size": 197581
+ },
+ {
+  "name": "Jupiter Bass",
+  "pack": "Yuli Yolo",
+  "style": "Bass",
+  "author": "Yuli Yolo",
+  "comments": "Analog bass.\nMW: Filter",
+  "macros": [
+   "VIBRATO",
+   "NOISE",
+   "STEREO UNISON",
+   "ANALOG"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Yuli Yolo\\Presets\\Factory Presets\\Jupiter Bass.vital",
+  "size": 229997
+ },
+ {
+  "name": "Keystation",
+  "pack": "Yuli Yolo",
+  "style": "Keys",
+  "author": "Yuli Yolo",
+  "comments": "Mellow piano keys with some synthetic strings.\nPRESS: Strings Sustain.\nMW: Auto-Pan.",
+  "macros": [
+   "WAVES",
+   "DETUNE",
+   "MUTATION",
+   "SPACE"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Yuli Yolo\\Presets\\Factory Presets\\Keystation.vital",
+  "size": 187784
+ },
+ {
+  "name": "Metal Head",
+  "pack": "Yuli Yolo",
+  "style": "Percussion",
+  "author": "Yuli Yolo",
+  "comments": "Metal impact.\nMW: HP Filter.",
+  "macros": [
+   "POSITION",
+   "SIZE",
+   "VARIATION",
+   "SPACE"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Yuli Yolo\\Presets\\Factory Presets\\Metal Head.vital",
+  "size": 943261
+ },
+ {
+  "name": "Salomon",
+  "pack": "Yuli Yolo",
+  "style": "Keys",
+  "author": "Yuli Yolo",
+  "comments": "Synthetic keys with ambiances.\nMW: Ambiances Off.",
+  "macros": [
+   "BEND",
+   "RESONANCE",
+   "SHIFT",
+   "WAVES"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Yuli Yolo\\Presets\\Factory Presets\\Salomon.vital",
+  "size": 1565345
+ },
+ {
+  "name": "Synthetic Quartet",
+  "pack": "Yuli Yolo",
+  "style": "Lead",
+  "author": "Yuli Yolo",
+  "comments": "Imaginary synthetic lead.\nPRESS: Sustain Mod Amp.\nMW: Filters.",
+  "macros": [
+   "SYNC",
+   "WAVES",
+   "DAMP",
+   "SPACE"
+  ],
+  "path": "C:\\Users\\tolga\\Documents\\Vital\\Yuli Yolo\\Presets\\Factory Presets\\Synthetic Quartet.vital",
+  "size": 119040
+ }
+]

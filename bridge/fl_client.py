@@ -30,8 +30,15 @@ class FL:
     def project_state(self):
         return self.call(protocol.CMD_GET_PROJECT_STATE)
 
-    def channels(self):
-        return self.call(protocol.CMD_CHANNEL_LIST)
+    def channels(self) -> list[dict]:
+        """All channel-rack channels (the daemon paginates; this follows next_start)."""
+        out, start = [], 0
+        while True:
+            page = self.call(protocol.CMD_CHANNEL_LIST, {"start": start})
+            out.extend(page.get("channels", []))
+            start = page.get("next_start")
+            if not start:
+                return out
 
     def patterns(self):
         return self.call(protocol.CMD_PATTERN_LIST)
